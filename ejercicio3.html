@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        .tabla{
+            display: grid;
+            font-family: sans-serif;
+            grid-gap: 1px;
+            grid-template-columns: 100px repeat(2, 150px);
+            margin: 0 auto;
+            width: fit-content;
+        }
+        .tabla div{
+            background-color: rosybrown;
+            color: white;
+            padding: 18px;
+            text-align: center;
+        }
+        .header{
+            grid-column: 1/4;
+        }
+        .sidebar{
+            grid-row: 2/ span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabla">
+        <div class="header"> celda 1 </div>
+            <div class="sidebar"> celda 2</div>
+            <div>celda 3</div>
+            <div>celda 4</div>
+            <div>celda 5</div>
+            <div>celda 6</div>
+    </div>
+</body>
+</html>

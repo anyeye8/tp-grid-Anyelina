@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+  <style>
+  .tabla{
+    font-family: sans-serif;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+    
+    margin: 0 auto;
+    width: 500px;
+  } 
+  .tabla div{
+    background: #9ac199;
+    color: white;
+    padding: 18px;
+    text-align: center;
+     
+  }
+  .header{
+      grid-column: 1 / span 3;
+      grid-row: 1
+  }
+  .sidebar{
+      grid-column: 4;
+      grid-row: 1/ span 2;
+      justify-content: center;
+      align-items: center;
+  }
+</style>
+</head>
+<body>
+<div class="tabla">
+  <div class="header"> celda 1 </div>
+  <div class="sidebar"> celda 2</div>
+  <div> celda 3</div>
+  <div> celda 4</div>
+  <div> celda 5</div>
+</div>
+</body>
+</html>

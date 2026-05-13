@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <style>
+        .tabla{
+            display: grid;
+            font-family: sans-serif;
+            grid-gap: 2px;
+            grid-template-columns: repeat(3, 150px);
+            margin: 0 auto;
+            width: 450px;
+        }
+        .tabla div{
+            background-color: rgb(154, 194, 194);
+            color: white;
+            padding: 18px;
+            text-align: center;
+        }
+        .header{
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabla">
+        <div class="header"> celda 1 </div>
+        
+            <div>celda 2</div>
+            <div>celda 3</div>
+            <div>celda 4</div>
+            <div>celda 5</div>
+            <div>celda 6</div>
+            <div>celda 7</div>
+    </div>
+</body>
+</html>
